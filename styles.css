@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding-top: 80px; /* Offset for fixed header */
+    padding-bottom: 40px; /* Offset for fixed footer */
+}
+header {
+    background-color: rgba(255, 204, 255, 0.8); /* Translucent background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header h1 {
+    margin: 0;
+    color: #e60073;
+    font-size: 2.5em;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #e60073;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #b30059;
+}
+main {
+    padding: 20px;
+}
+.content {
+    padding: 40px 20px;
+}
+.gallery img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.guestbook textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #e60073;
+    margin: 10px 0;
+}
+.guestbook input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e60073;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.guestbook input[type="submit"]:hover {
+    background-color: #b30059;
+}
+footer {
+    background-color: rgba(255, 204, 255, 0.8); /* Translucent background */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+footer p {
+    margin: 0;
+    color: #e60073;
+}
+form input, form textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid #e60073;
+}
+form input[type="submit"] {
+    background-color: #e60073;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+form input[type="submit"]:hover {
+    background-color: #b30059;
+}
